@@ -208,7 +208,7 @@ async def background_task(application: Application):
 
 
 async def post_init(application: Application):
-  await application.bot.send_message(chat_id=CHAT_ID,text="🤖 Bot đã khởi động thành công!")
+  await application.bot.send_message(chat_id=CHAT_ID,text="CHƠI NGAY TẠI @tubaoduong_bot")
   asyncio.create_task(background_task(application))
   
 async def lamcai(update: Update, context: ContextTypes.DEFAULT_TYPE):
